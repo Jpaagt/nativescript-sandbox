@@ -1,0 +1,15 @@
+<TabViewItem
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  title="{{ menuViewModel, menuViewModel.title }}">
+  <TabViewItem.view>
+    <StackLayout orientation="vertical" loaded="onLoad" bindingContext="{{menuViewModel}}">
+      <Label text="{{ title }}"/>
+      <StackLayout orientation="vertical" id="menuView">
+        <Label text="{{ entry1 }}"/>
+        <Label text="{{ entry2 }}"/>
+        <Label text="{{ entry3 }}"/>
+      </StackLayout>
+      <ActivityIndicator busy="{{ isLoading }}" />
+    </StackLayout>
+  </TabViewItem.view>
+</TabViewItem>

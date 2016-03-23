@@ -1,0 +1,15 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:menu="components/main/tabs/menu"
+  xmlns:browse="components/main/tabs/browse"
+  navigatingTo="onNavigatingTo" 
+  loaded="onLoaded">
+  <StackLayout orientation="vertical">
+    <TabView id="tabView" selectedIndex="1">
+      <TabView.items>
+        <menu:menu/>
+        <browse:browse/>
+      </TabView.items>
+    </TabView>
+  </StackLayout>
+</Page>

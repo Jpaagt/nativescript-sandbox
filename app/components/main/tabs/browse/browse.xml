@@ -1,0 +1,11 @@
+<TabViewItem
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  title="Browse"
+  navigatingTo="onNavigatingTo" 
+  loaded="onLoaded">
+  <TabViewItem.view>
+    <StackLayout orientation="vertical">
+      <Label text="Main"/>
+    </StackLayout>
+  </TabViewItem.view>
+</TabViewItem>
